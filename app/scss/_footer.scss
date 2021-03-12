@@ -1,0 +1,36 @@
+footer {
+    text-align: center;
+    color: $light;
+    margin: 2rem 0 4rem 0;
+    border-top: 1px solid #ddd;
+
+    p {
+        margin: 2rem 0 1rem 0;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    ul, .text {
+        margin: 2rem;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: $light;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin: 1rem;
+        }
+    }
+}

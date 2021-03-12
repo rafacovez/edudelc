@@ -1,0 +1,100 @@
+// BURGER BUTTON
+#burgerWrapper {
+    z-index: 5;
+    padding: 1rem;
+    cursor: pointer;
+
+    #burgerIcon {
+        display: block;
+        position: relative;
+        width: 25px;
+        height: 2px;
+        background: white;
+        border-radius: 5px;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -8px;
+            right: 0;
+            width: 60%;
+            height: 100%;
+            background: white;
+            border-radius: 5px;
+        }
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 8px;
+            width: 100%;
+            height: 100%;
+            background: white;
+            border-radius: 5px;
+        }
+    }
+}
+
+// X ICON
+#xWrapper {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    
+    #xIcon {
+        position: relative;
+        display: block;
+        width: 15px;
+        height: 3px;
+        background: transparent;
+        border-radius: 5px;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            border-radius: 5px;
+            transform: rotate(-45deg);
+        }
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            border-radius: 5px;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+// BUTTONS
+.btn {
+    font-family: inherit;
+    font-weight: $fontMid;
+    padding: 1rem 2.5rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    opacity: 0.95;
+    transition: opacity .2s ease-out;
+    &:hover {
+        opacity: 1;
+    }
+
+    &-primary {
+        background-color: $colorOne;
+        color: white;
+    }
+}

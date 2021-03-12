@@ -1,0 +1,20 @@
+$light: rgb(125, 125, 125);
+$dark: rgb(50, 50, 50);
+$colorOne: rgb(60, 100, 255);
+
+$shadowLight: 0 0 10px rgba(0, 0, 0, 0.2);
+
+$font: 'Poppins', monospace;
+$fontLight: 300;
+$fontMid: 500;
+$fontBold: 700;
+
+@import 'globals';
+@import 'header';
+@import 'about-us';
+@import 'references';
+@import 'icons';
+@import 'footer';
+@import 'nav';
+@import 'contact';
+@import 'donate';

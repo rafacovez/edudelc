@@ -1,0 +1,25 @@
+header {
+    background-image: url("/images/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    font-weight: $fontMid;
+
+    .content {
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .logo {
+            font-weight: $fontMid;
+            font-size: 1.5em;
+            margin: 1rem 0;
+            
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
